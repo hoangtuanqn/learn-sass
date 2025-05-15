@@ -6,3 +6,12 @@
 .list {
     @include grid(4, 20px);
 }
+@mixin font-size($size: 16px) {
+    font-size: $size;
+    @content;
+}
+h1 {
+    @include font-size(20px) {
+        color: red;
+    }
+}
