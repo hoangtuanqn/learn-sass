@@ -1,0 +1,6 @@
+- Học về biến
+- Học về mixin (giống hàm)
+- Học về thừa kế
+- Học về import, use
+- Học về các quy tắc đặt tên
+- SCSS hỗ trợ hoàn toàn css
