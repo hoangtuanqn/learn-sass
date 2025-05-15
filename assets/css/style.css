@@ -1,3 +1,27 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.cards .card {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+}
+.cards .card__image {
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+}
+.cards .card__read-more {
+  color: #aaa;
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=style.css.map */

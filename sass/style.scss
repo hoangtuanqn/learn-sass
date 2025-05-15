@@ -1,0 +1,26 @@
+$borderColor: #ccc;
+$borderRadius: 20px;
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    .card {
+        border: 1px solid $borderColor;
+        padding: 5px 10px;
+        padding-bottom: 30px;
+        border-radius: $borderRadius;
+        &__image {
+            border-radius: $borderRadius;
+            object-fit: cover;
+            width: 100%;
+        }
+        &__read-more {
+            color: #aaa;
+            text-decoration: underline;
+        }
+    }
+}
