@@ -1,5 +1,5 @@
 $borderColor: #ccc;
-$borderRadius: 20px;
+$sizePx: 20px;
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -7,20 +7,23 @@ $borderRadius: 20px;
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: $sizePx;
     .card {
         border: 1px solid $borderColor;
-        padding: 5px 10px;
-        padding-bottom: 30px;
-        border-radius: $borderRadius;
+        padding: 5px 10px 30px 10px;
+        border-radius: $sizePx;
         &__image {
-            border-radius: $borderRadius;
+            border-radius: $sizePx;
             object-fit: cover;
             width: 100%;
         }
         &__read-more {
             color: #aaa;
             text-decoration: underline;
+            font: {
+                size: $sizePx;
+                weight: 700;
+            }
         }
     }
 }

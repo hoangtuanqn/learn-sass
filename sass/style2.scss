@@ -1,0 +1,33 @@
+$primary-color: #0d6efd;
+$secondary-color: #6c757d;
+$success-color: #198754;
+$danger-color: #dc3545;
+$warning-color: #ffc107;
+$info-color: #0dcaf0;
+$light-color: #f8f9fa;
+$dark-color: #212529;
+$link-color: #0d6efd;
+$text-black: #000;
+$text-white: #fff;
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+%btn {
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    background-color: $primary-color;
+    border-radius: 8px;
+    color: $text-white;
+    font: {
+        size: 14px;
+        weight: 600;
+    }
+    cursor: pointer;
+}
+.btn {
+    &-primary {
+        @extend %btn;
+    }
+}

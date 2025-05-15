@@ -1,0 +1,8 @@
+@mixin grid($col: 1, $row-grap, $col-grap: $row-grap) {
+    display: grid;
+    grid-template-columns: repeat($col, 1fr);
+    gap: $row-grap $col-grap;
+}
+.list {
+    @include grid(4, 20px);
+}
